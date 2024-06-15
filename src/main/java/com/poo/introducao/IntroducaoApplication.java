@@ -9,7 +9,8 @@ public class IntroducaoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(IntroducaoApplication.class, args);
-		System.out.println("ola mundo");
+		Lista01 lista=new Lista01();
+		lista.ex1();
 	}
 
 }
