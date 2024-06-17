@@ -117,4 +117,18 @@ public class Lista01 {
         System.out.println("A média do estudante é: " + media);
         sc.close();
     }
+    public void ex8(){
+
+        double celsius, farenheit;
+
+        System.out.println("Digite a temperatura em Farenheit: ");
+        Scanner sc = new Scanner(System.in);
+        farenheit = sc.nextDouble();
+
+        celsius = (farenheit -32)/ 1.8;
+
+        System.out.println("A temperatura em Celsius é: " + celsius);
+        sc.close();
+    }
+
 }
