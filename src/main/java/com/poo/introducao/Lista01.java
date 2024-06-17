@@ -48,4 +48,18 @@ public class Lista01 {
         sc.close();
 
     }
+    public void ex4(){
+
+        int numero, antecessor, sucessor;
+
+        System.out.println("Digite um número: ");
+        Scanner sc = new Scanner(System.in);
+        numero = sc.nextInt();
+
+        antecessor = numero -1;
+        sucessor = numero +1;
+
+        System.out.println("O antecessor do número escolhido é: " + antecessor + "\nE o sucessor do número escolhido é: " + sucessor);
+        sc.close();
+    }
 }
