@@ -35,5 +35,17 @@ public class Lista01 {
         System.out.println("Olá, " + nome + " " + sobrenome + "!!!");
         sc.close();
     }
+    public void ex3(){
 
+        double valorReal, valorDolar, taxaConversao = 5.25;
+
+        System.out.println("Digite o valor em reais: R$");
+        Scanner sc = new Scanner(System.in);
+        valorReal = sc.nextDouble();
+
+        valorDolar = valorReal/ taxaConversao;
+        System.out.println("O valor convertido é: U$" + valorDolar);
+        sc.close();
+
+    }
 }
