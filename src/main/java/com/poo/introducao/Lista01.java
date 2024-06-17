@@ -95,4 +95,26 @@ public class Lista01 {
         sc.close();
 
     }
+    public void ex7(){
+
+        double nota1, nota2, nota3, nota4, media;
+
+        System.out.println("Digite a primeira nota: ");
+        Scanner sc = new Scanner(System.in);
+        nota1 = sc.nextDouble();
+
+        System.out.println("\nDigite a segunda nota: ");
+        nota2 = sc.nextDouble();
+
+        System.out.println("\nDigite a terceira nota: ");
+        nota3 = sc.nextDouble();
+
+        System.out.println("\nDigite a quarta nota: ");
+        nota4 = sc.nextDouble();
+
+        media = (nota1 + nota2 + nota3 + nota4)/4;
+
+        System.out.println("A média do estudante é: " + media);
+        sc.close();
+    }
 }
