@@ -62,4 +62,20 @@ public class Lista01 {
         System.out.println("O antecessor do número escolhido é: " + antecessor + "\nE o sucessor do número escolhido é: " + sucessor);
         sc.close();
     }
+    public void ex5(){
+
+        int areaTerreno, valorm2, valorTerreno;
+
+        System.out.println("Qual a área do seu terreno? ");
+        Scanner sc = new Scanner(System.in);
+        areaTerreno = sc.nextInt();
+
+        System.out.println("Qual o valor do m² na sua região? ");
+        valorm2 = sc.nextInt();
+
+        valorTerreno = areaTerreno * valorm2;
+        System.out.println("O valor do seu terreno é: " + valorTerreno);
+        sc.close();
+
+    }
 }
