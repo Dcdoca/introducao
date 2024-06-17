@@ -78,4 +78,21 @@ public class Lista01 {
         sc.close();
 
     }
+    public void ex6(){
+
+        double distancia, valorcombustivel = 5.25, custototal, autonomia;
+
+        System.out.println("Digite a distância percorrida: ");
+        Scanner sc = new Scanner(System.in);
+        distancia = sc.nextDouble();
+
+        System.out.println("Qual o custo do combustível? ");
+        custototal = sc.nextDouble();
+
+        autonomia = distancia/(custototal/valorcombustivel);
+
+        System.out.println("A autonomia do seu veículo é de: " + autonomia);
+        sc.close();
+
+    }
 }
