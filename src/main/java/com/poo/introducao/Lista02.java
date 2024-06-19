@@ -119,8 +119,47 @@ public class Lista02 {
         }
         scanner.close();
     }
+    public void ex06(){
+        Scanner scanner = new Scanner(System.in);
 
+        double nota1;
+        double nota2;
+        double media;
+        double notarecuperacao;
+
+        System.out.println("digie a nota da primeira prova:");
+        nota1 = scanner.nextDouble();
+
+        System.out.println("digite a nota da segunda nota:");
+        nota2 = scanner.nextDouble();
+
+        media = (nota1 + nota2) /2;
+
+        if (media >=6) {
+            System.out.println("Aluno aprovado com a média:" + media);
+        }
+        else{
+            System.out.println("Aluno em recuperação. média:" + media);
+        }
+
+        System.out.println("Digite a nota da prova de recuperação");
+        notarecuperacao = scanner.nextDouble();
+
+        if (nota1 < nota2){
+            nota1=notarecuperacao;
+        }
+        else{
+            nota2 = notarecuperacao;
+        }
+        media = (nota1 + nota2) /2;
+
+        if(media >=6){
+            System.out.println("Aluno aprovado apos recuperação");
+        }
+        else{
+            System.out.println("Aluno reprovado mesmo apos recuperação");
+        }
+        scanner.close();
     }
 
-    
-
+    }
