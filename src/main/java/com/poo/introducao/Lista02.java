@@ -18,7 +18,6 @@ public class Lista02 {
 
         scanner.close();
     }
-    
     public void ex02(){
         Scanner scanner = new Scanner(System.in);
         int numero01;
@@ -70,6 +69,26 @@ public class Lista02 {
         scanner.close();
 
     }
+    public void ex04(){
+        Scanner scanner = new Scanner(System.in);
 
+        int idade;
+
+        System.out.println("digite sua idade.");
+        idade=scanner.nextInt();
+
+        if (idade < 16){
+            System.out.println("Você nao pode entra no evento");
+        }
+        else if (idade >= 16 && idade <18){
+            System.out.println("Você pode entrar no evento somente acompahado por responsáveis.");
+        }
+        else{
+            System.out.println("Você pode entrar no evento");
+        }
+        scanner.close();
+        }
     }
+
+    
 
