@@ -161,5 +161,30 @@ public class Lista02 {
         }
         scanner.close();
     }
+    public void ex07(){
+        Scanner scanner = new Scanner(System.in);
+        
+        int numero;
+        int divisor;
+
+        System.out.println("Digite o numero para testar:");
+        numero = scanner.nextInt();
+
+        System.out.println("digite o divisor:");
+        divisor = scanner.nextInt();
+
+        if(divisor == 0){
+            System.out.println("divisao por zero nao é permitida.");
+        }
+        else{
+            if(numero % divisor == 0){
+                System.out.println(numero + " é divisivel por " + divisor);
+            }
+            else{
+                System.out.println(numero + " não e divisivel por " + divisor);
+            }
+        }
+            scanner.close();
+    }
 
     }
