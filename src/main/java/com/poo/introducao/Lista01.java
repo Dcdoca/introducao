@@ -127,8 +127,9 @@ public class Lista01 {
 
         celsius = (farenheit -32)/ 1.8;
 
-        System.out.println("A temperatura em Celsius é: " + celsius);
+        System.out.println("A temperatura em Celsius é: %s ".formatted(celsius) );
         sc.close();
     }
 
 }
+ 
