@@ -88,6 +88,38 @@ public class Lista02 {
         }
         scanner.close();
         }
+    public void ex05(){
+        Scanner scanner = new Scanner(System.in);
+        String logincorreto = "Antonio";
+        String senhacorreta = "1234";
+        String login;
+        String senha;
+        boolean loginvalido;
+        boolean senhavalida;
+        
+        System.out.println("Digite seu login:");
+        login = scanner.nextLine();
+
+        System.out.println("Digite sua senha:");
+        senha = scanner.nextLine();
+
+        loginvalido = login.equals(logincorreto);
+        senhavalida = senha.equals(senhacorreta);
+
+        if(loginvalido && senhavalida){
+            System.out.println("Login realizado com sucesso!");
+        }
+        else{
+            if(!loginvalido){
+                System.out.println("Login incorreto.");
+            }
+            if(!senhavalida){
+                System.out.println("senha incorreta.");
+            }
+        }
+        scanner.close();
+    }
+
     }
 
     
