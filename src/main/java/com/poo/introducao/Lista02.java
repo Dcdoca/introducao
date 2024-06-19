@@ -44,6 +44,32 @@ public class Lista02 {
         scanner.close();
 
 }
+    public void ex03(){
+        Scanner scanner = new Scanner(System.in);
+        int idade;
+        String deficiente;
+        String gestante;
+        boolean filapreferencial;
+
+        System.out.println("Qual é a sua idade? ");
+        idade = scanner.nextInt();
+
+        System.out.println("Você é portador de alguma deficiencia?  (s//n) ");
+        deficiente = scanner.next();
+
+        System.out.println("Você é gestante.");
+        gestante = scanner.next();
+
+        filapreferencial = (idade > 65) || deficiente.equalsIgnoreCase("s") || gestante.equalsIgnoreCase("s");
+        if(filapreferencial){
+            System.out.println("Você deve ir para fila preferencial.");
+        }
+        else{
+            System.out.println("Você deve ir para fila comun.");
+        }
+        scanner.close();
+
+    }
 
     }
 
