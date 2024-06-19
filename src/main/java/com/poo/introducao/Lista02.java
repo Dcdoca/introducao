@@ -186,5 +186,51 @@ public class Lista02 {
         }
             scanner.close();
     }
+    public void ex08(){
+        Scanner scanner = new Scanner(System.in);
+        String[][] perguntas = {
+            {"Qual é a capital da França?", "1. Berlim", "2. Madri", "3. Paris", "4. Lisboa", "3"},
+            {"Qual é o maior planeta do sistema solar?", "1. Marte", "2. Júpiter", "3. Terra", "4. Saturno", "2"},
+            {"Quem escreveu 'Dom Quixote'?", "1. William Shakespeare", "2. Miguel de Cervantes", "3. Dante Alighieri", "4. João Cabral de Melo Neto", "2"},
+            {"Qual é o elemento químico representado pelo símbolo 'O'?", "1. Ouro", "2. Prata", "3. Oxigênio", "4. Ozônio", "3"},
+            {"Em que ano o homem pisou na Lua pela primeira vez?", "1. 1965", "2. 1969", "3. 1972", "4. 1975", "2"}
+        };
 
+        int acertos = 0;
+        int erros = 0;
+
+        for (int i = 0; i < perguntas.length; i++) {
+            System.out.println(perguntas[i][0]);
+            for (int j = 1; j <= 4; j++) {
+                System.out.println(perguntas[i][j]);
+            }
+
+            System.out.print("Digite o número da sua resposta: ");
+            String resposta = scanner.nextLine();
+
+            if (resposta.equals(perguntas[i][5])) {
+                acertos++;
+                System.out.println("Resposta correta!");
+            } else {
+                erros++;
+                System.out.println("Resposta errada.");
+            }
+
+            if (erros >= 3) {
+                System.out.println("Você errou 3 vezes. Você perdeu o jogo.");
+                break;
+            }
+
+            System.out.println();
+        }
+
+        if (erros < 3) {
+            System.out.println("Você chegou ao final do jogo.");
+        }
+
+        System.out.println("Número de acertos: " + acertos);
+
+        scanner.close();
     }
+}
+    
