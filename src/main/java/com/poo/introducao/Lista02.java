@@ -127,7 +127,7 @@ public class Lista02 {
         double media;
         double notarecuperacao;
 
-        System.out.println("digie a nota da primeira prova:");
+        System.out.println("digite a nota da primeira prova:");
         nota1 = scanner.nextDouble();
 
         System.out.println("digite a nota da segunda nota:");
@@ -157,7 +157,7 @@ public class Lista02 {
             System.out.println("Aluno aprovado apos recuperação");
         }
         else{
-            System.out.println("Aluno reprovado mesmo apos recuperação");
+            System.out.println("Aluno reprovado mesmo apos recuperação com a media" + media);
         }
         scanner.close();
     }
