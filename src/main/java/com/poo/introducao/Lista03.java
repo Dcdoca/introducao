@@ -34,7 +34,7 @@ public class Lista03 {
             scanner.close();
             }
         }
-        void ex02(){
+    public void ex02(){
             int num;
     
             System.out.println("--------");
@@ -50,7 +50,28 @@ public class Lista03 {
             }
             sc.close();
         }
+    public void ex03(){
+        
+        int num1;
+        int num2;
 
+        System.out.print("Informe um número inteiro: ");
+        Scanner sc = new Scanner(System.in);
+        num1 = sc.nextInt();
+
+        System.out.print("Informe outro número inteiro: ");
+        num2 = sc.nextInt();
+
+        for (int i=(num1+1); i<num2; i++) {
+            if ( (i%2) == 0 ) {
+                System.out.println(i);
+            }
+        }
     }
+               
+}
+
+
+    
     
 
