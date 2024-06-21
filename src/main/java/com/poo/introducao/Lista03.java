@@ -2,9 +2,7 @@ package com.poo.introducao;
 import java.util.Scanner;
 
 public class Lista03 {
-    /**
-     * 
-     */
+    
     public void ex01(){
         Scanner scanner = new Scanner(System.in);
 
@@ -22,6 +20,7 @@ public class Lista03 {
                     scanner.next();
                 }
                 
+
             }
             System.out.println("Cronometro iniciado por" + segundos + "segundos.");
             try {
@@ -35,6 +34,23 @@ public class Lista03 {
             scanner.close();
             }
         }
+        void ex02(){
+            int num;
+    
+            System.out.println("--------");
+            System.out.println("Tabuada");
+            System.out.println("--------");
+            System.out.print("Digite um número: ");
+            Scanner sc = new Scanner(System.in);
+    
+            num = sc.nextInt();
+    
+            for (int i=0; i<=10; i++){
+                System.out.println(num + " x " + i + " = " + num*i);
+            }
+            sc.close();
+        }
+
     }
     
 
