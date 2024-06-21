@@ -145,7 +145,27 @@ public class Lista03 {
         } while (tentativas > 0 && respostaErrada);
     
     }
+    public void ex06(){
 
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o número de andares para a pirâmide: ");
+        int andares = scanner.nextInt();
+
+        for (int i = 1; i <= andares; i++) {
+            
+            for (int j = andares - i; j > 0; j--) {
+                System.out.print(" ");
+            }
+            
+            for (int k = 0; k < (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+            
+            System.out.println();
+        }
+            scanner.close();
+    }
 
     }
     
