@@ -68,8 +68,43 @@ public class Lista03 {
             }
         }
     }
+    public void ex04(){
+
+            int numeroAdvinhar;
+            int advinhador;
+            Scanner leia = new Scanner(System.in);
+    
+            System.out.print("Digite um numero para ser advinhado:");
+            numeroAdvinhar = leia.nextInt();
+    
+            do {
+                System.out.print("advinhe o numero digitado:");
+                advinhador = leia.nextInt();
+                if (advinhador == numeroAdvinhar) {
+    
+                    System.out.println("parabens, voce acertou!");
+    
+                } else {
+                    if ((advinhador - numeroAdvinhar) >= 6) {
+                        System.out.println("ta frio! numero muito alto!");
+                    } else if ((advinhador - numeroAdvinhar) <= -6) {
+                        System.out.println("ta frio! numero muito baixo!");
+                    } else if (((advinhador - numeroAdvinhar) <= 5) && ((advinhador - numeroAdvinhar) >= 1)) {
+                        System.out.println("ta quente! numero maior");
+                    } else if (((advinhador - numeroAdvinhar) >= -5) && ((advinhador - numeroAdvinhar) <= -1)) {
+                        System.out.println("ta quente! numero menor");
+    
+                    }
+                    System.out.print("tente novamente, ");
+                }
+    
+            }
+            while (advinhador != numeroAdvinhar);
+        }
+    }
+    
                
-}
+
 
 
     
