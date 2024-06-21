@@ -10,8 +10,8 @@ public class IntroducaoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(IntroducaoApplication.class, args);
 		
-		Lista03 lista3=new Lista03();
-		lista3.ex07();
+		Lista04 lista3=new Lista04();
+		lista3.ex01();
 	}
 
 }
