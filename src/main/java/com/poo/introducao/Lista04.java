@@ -1,5 +1,6 @@
 package com.poo.introducao;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Lista04 {
@@ -94,6 +95,35 @@ public void ex04(){
 
     System.out.println("Quantidade de números pares: " + countPares);
 }
+public void ex05(){
+        ArrayList<String> lista_de_compras = new ArrayList<>();
+        Scanner mercadiunho = new Scanner(System.in);
+        String opcao;
+
+        do {
+            System.out.println("Digite '1' para inserir um item, '2' para ver a lista, ou '3' para sair:");
+            opcao = mercadiunho.nextLine();
+            switch (opcao) {
+                case "1":
+                    System.out.println("Digite o nome do item:");
+                    String item = mercadiunho.nextLine();
+                    lista_de_compras.add(item);
+                    break;
+                case "2":
+                    System.out.println("Lista de Compras:");
+                    for (String i : lista_de_compras) {
+                        System.out.println(i);
+                    }
+                    break;
+                case "3":
+                    System.out.println("Saindo...");
+                    break;
+                default:
+                    System.out.println("Opção inválida.");
+            }
+
+        } while (!opcao.equals("3"));
+    }
 
 }
 

@@ -11,7 +11,7 @@ public class IntroducaoApplication {
 		SpringApplication.run(IntroducaoApplication.class, args);
 		
 		Lista04 lista3=new Lista04();
-		lista3.ex04();
+		lista3.ex05();
 	}
 
 }
