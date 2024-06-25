@@ -33,23 +33,24 @@ public class Lista04 {
 
         // Exibindo os resultados
         System.out.printf("A compra de menor valor é: R$ %.2f%n", menorValor);
-        System.out.printf("A compra de maior valor é: R$ %.2f%n", maiorValor);
-    }
+        System.out.printf("A compra de maior valor é: R$ %.2f%n", maiorValor);}
+    
 
-    public static double encontrarMenorValor(double[] vendas) {
+        public double encontrarMenorValor(double[] vendas) {
         double menorValor = vendas[0];
+    
 
         // Encontrando o menor valor
         for (double venda : vendas) {
             if (venda < menorValor) {
                 menorValor = venda;
+            
             }
         }
 
         return menorValor;
     }
-
-    public static double encontrarMaiorValor(double[] vendas) {
+    public  double encontrarMaiorValor(double[] vendas) {
         double maiorValor = vendas[0];
 
         // Encontrando o maior valor
@@ -58,13 +59,30 @@ public class Lista04 {
                 maiorValor = venda;
             }
         }
+        
+    
 
         return maiorValor;
     }
+    
+
+
+public void ex03(){
+
+    double vendas[] = { 20.50, 100.50, 15.50, 10.50 };
+    double fechamento = 0;
+    double ticketMedio;
+
+    for (double i : vendas) {
+        fechamento += i;
+    }
+
+    ticketMedio = fechamento / vendas.length;
+
+    System.out.println("a media foi : " + ticketMedio);
 }
-    
 
 
-    
+}
 
 
