@@ -81,7 +81,19 @@ public void ex03(){
 
     System.out.println("a media foi : " + ticketMedio);
 }
+public void ex04(){
+    int[] lista = {3, 5, 6, 7, 8, 10, 22, 55, 110};
+    int countPares = 0;
 
+    for(int num : lista){
+        if (num % 2 == 0) {
+            countPares++;
+
+        }
+    }
+
+    System.out.println("Quantidade de números pares: " + countPares);
+}
 
 }
 
